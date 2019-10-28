@@ -6,10 +6,43 @@
     <Name>semana9.database</Name>
     <FullPath>semana9.database</FullPath>
   </Database>
+  <DataSources>
+    <ProjectItem>
+      <Name>Conection.ds</Name>
+      <FullPath>Conection.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>VistaBD.dsv</Name>
+      <FullPath>VistaBD.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <MiningModels>
+    <ProjectItem>
+      <Name>Analisis-datos.dmm</Name>
+      <FullPath>Analisis-datos.dmm</FullPath>
+    </ProjectItem>
+  </MiningModels>
   <Configurations>
     <Configuration>
       <Name>Development</Name>
-      <Options />
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Conection</Id>
+            <Name>Conection</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Persist Security Info=True;Password=;User ID=;Initial Catalog=Base2008</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Conection</Id>
+            <Name>Conection</Name>
+            <Value xsi:type="xsd:int">1</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
     </Configuration>
   </Configurations>
 </Project>
